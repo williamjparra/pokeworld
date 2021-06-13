@@ -21,8 +21,10 @@ export default function PokeContainer() {
                 const poke = await axios.get(`https://pokeapi.co/api/v2/pokemon?offset=0&limit=${pokemonFetchAmount}`)
                 setNext(poke.data.next)
                 setData([...poke.data.results])
+                setLoading(false)
             } catch(err) {
                 setData("error")
+                setLoading(false)
             }
         }
         const search = async () => {
@@ -31,7 +33,6 @@ export default function PokeContainer() {
         }
 
         response()
-        setLoading(false)
         search()
     }, [])    
 
