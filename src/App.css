@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+  margin: 0;
+  background-color: #fff275;
+  min-height: 100vh;
+}
+
+.App a {
+  text-decoration: none;
+  color: black;
+}
+
+.App-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

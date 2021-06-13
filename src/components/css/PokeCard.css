@@ -1,0 +1,65 @@
+.Card-Container {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 220px;
+  overflow: hidden;
+  margin: 5px 5px 0 5px;
+  background-color: #6699cc;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.7s;
+}
+
+.Card-Container:hover {
+  transition-duration: 0.3s;
+  box-shadow: 0 5px 10px 5px rgba(102, 153, 204, 0.7);
+}
+
+.Card-Container img {
+  max-width: 100%;
+}
+
+.Img-Container {
+  display: flex;
+  border-radius: 50%;
+  background-color: #41d3bd;
+  min-height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Card-Container .type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card-Container .type p {
+  margin-left: 10px;
+  text-transform: capitalize;
+  font-family: Cabin;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: Bungee;
+}
+
+h3 span {
+  color: White;
+  text-transform: capitalize;
+}
+
+small {
+  background-color: white;
+  border-radius: 10px;
+  font-family: Cabin;
+}
+
+small a:hover {
+  color: #ff8c42;
+}
