@@ -69,7 +69,7 @@ export default function PokeContainer() {
     if(data === "error") {
         return <div>
             <h2>
-                Error getting data please try again
+                Error getting data please try again latter
             </h2>
         </div>
     }
