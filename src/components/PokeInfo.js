@@ -51,6 +51,9 @@ export default function PokeInfo() {
     return (
         <div className="pokeInfo-Container">
             <div className="Poke-info-card">
+                <h3>
+                    Info Page of the Pokemon: {id}
+                </h3>
                 <div className="img-container">
                     <img src={data.sprites.other.dream_world.front_default} alt={data.name} />
                 </div>
