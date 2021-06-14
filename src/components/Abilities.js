@@ -23,7 +23,7 @@ export default function Abilities(props) {
         }
 
         getHabilityDesc()
-    }, [])
+    }, [props.uri])
 
     return (
         <div className="abi-type">

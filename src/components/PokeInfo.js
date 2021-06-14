@@ -40,10 +40,10 @@ export default function PokeInfo() {
         </div> 
     }
 
-    const weightFormater = (weight) => {
-        var kgWeight = weight * 0.1
+    const decimeterFormater = (unit) => {
+        var metricUnit = unit * 0.1
 
-        return kgWeight.toString().slice(0,3) 
+        return metricUnit.toString().slice(0,3) 
     }
         
     
@@ -59,10 +59,10 @@ export default function PokeInfo() {
                         <div className="General">
                             <h3>General info</h3>
                             <p>
-                                <b>Weigh:</b> <span>{weightFormater(data.weight)} Kg</span>
+                                <b>Weigh:</b> <span>{decimeterFormater(data.weight)} Kg</span>
                             </p>
                             <p>
-                                <b>Height: </b> {data.height} Mts
+                                <b>Height: </b> {decimeterFormater(data.height)} Mts
                             </p>
                         </div>
                         <div className="types">
