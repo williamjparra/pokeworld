@@ -74,7 +74,7 @@ export default function PokeInfo() {
                         <div className="abilities">
                             <h3> Abilities </h3>
                             <div className="abi-con">
-                                {data.abilities.map( ab => <Abilities  uri={ab.ability.url} key={ab.name}/>)}
+                                {data.abilities.map( ab => <Abilities  uri={ab.ability.url} key={ab.ability.name} />)}
                             </div>
                         </div>
                     </div>
